@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Фаризат · Бацзы консультация</title>
+<meta name="description" content="Жеке Бацзы + Ци Мэнь консультация қазақ тілінде. 2027 жылы сізді не күтеді? Онлайн, кез келген қаладан.">
+<meta property="og:title" content="2027 жылы сізді не күтеді? — Фаризат, Бацзы маманы">
+<meta property="og:description" content="Сегіз иероглиф — сіздің тағдыр кодыңыз. Жеке консультация, онлайн, қазақ тілінде.">
+<meta property="og:image" content="https://farizat.com/img/hero.jpg">
+<link rel="canonical" href="https://farizat.com/">
+<meta name="theme-color" content="#f7f0e4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f0e4; --paper2:#efe4d2; --card:#fffaf2; --ink:#2b1520; --muted:#6e5a54;
+  --wine:#7a1f35; --wine-d:#3d0f1e; --wine-dd:#2a0a15; --gold:#b98a30; --gold-l:#e0b45a; --gold-ll:#f4d996;
+  --line:rgba(122,31,53,.16); --line-g:rgba(185,138,48,.45);
+  --wood:#3f8a5a; --fire:#d24a32; --earth:#b07a2e; --metal:#8b8378; --water:#2f6bb0;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Montserrat',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --han:'Noto Serif SC','Songti SC','SimSun',serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden}
+/* paper grain */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.35;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .32 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:96px;position:relative}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--wine);font-weight:700;display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+.center .eyebrow::after{content:"";width:28px;height:1px;background:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;text-wrap:balance}
+h2{font-size:clamp(36px,5.6vw,60px);margin:16px 0 18px}
+h1 em,h2 em{font-style:italic;color:var(--wine)}
+.lead{font-size:clamp(16px,2vw,18px);color:var(--muted);max-width:640px}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--sans);font-weight:700;font-size:16px;text-decoration:none;border-radius:999px;padding:18px 32px;transition:transform .2s,box-shadow .2s;cursor:pointer;border:0;position:relative;overflow:hidden}
+.btn-wa{background:var(--wine);color:#fff4e6;box-shadow:0 14px 30px -12px rgba(122,31,53,.6)}
+.btn-wa::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,235,200,.35),transparent);transform:skewX(-20deg);animation:shine 4.5s ease-in-out infinite}
+@keyframes shine{0%,60%{left:-60%}100%{left:130%}}
+.btn-wa:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-ll),var(--gold-l) 50%,var(--gold));color:var(--wine-dd);box-shadow:0 14px 30px -12px rgba(185,138,48,.7)}
+.btn-line{border:1px solid var(--line-g);color:var(--ink);background:transparent}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(247,240,228,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.seal{width:38px;height:38px;border-radius:9px;background:var(--wine);display:grid;place-items:center;font-family:var(--han);color:#ffe9c9;font-size:19px;transform:rotate(-4deg);box-shadow:inset 0 0 0 2px rgba(255,233,201,.35)}
+.logo b{font-family:var(--serif);font-size:23px;font-weight:700}
+.logo small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:-3px}
+.nav .btn{padding:11px 20px;font-size:14px}
+
+/* HERO */
+.hero{padding-block:30px 90px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(50px,8vw,96px);margin:20px 0 22px;letter-spacing:-.01em}
+.hero h1 .num{font-family:var(--serif);color:var(--gold);font-style:normal}
+.hero .lead{margin-bottom:34px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.trust{display:flex;gap:28px;flex-wrap:wrap;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
+.trust div b{font-family:var(--serif);font-size:38px;color:var(--wine);line-height:1;display:block;font-weight:700}
+.trust div span{font-size:13px;color:var(--muted)}
+.fill{border-bottom:2px dashed var(--gold);padding:0 2px}
+.trust b .fill,.ex-stats b .fill{font-size:inherit!important;color:inherit!important;display:inline!important;margin:0!important;line-height:inherit}
+
+.orbit{position:relative;width:min(100%,520px);aspect-ratio:1;justify-self:center;display:grid;place-items:center}
+.ring{position:absolute;inset:0;animation:spin 80s linear infinite}
+.ring2{position:absolute;inset:9%;animation:spin 120s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ring text{font-family:var(--han);font-size:19px;fill:var(--gold)}
+.ring2 text{font-family:var(--han);font-size:15px;fill:var(--wine);opacity:.55}
+.orbit .ph{position:relative;width:66%;aspect-ratio:3/4;border-radius:999px 999px 26px 26px;overflow:hidden;box-shadow:0 40px 70px -30px rgba(61,15,30,.55);border:6px solid var(--card)}
+.orbit .ph img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.stamp{position:absolute;right:6%;bottom:12%;width:96px;height:96px;border-radius:14px;background:var(--wine);color:#ffe9c9;display:grid;place-items:center;text-align:center;transform:rotate(8deg);box-shadow:0 16px 30px -12px rgba(61,15,30,.6),inset 0 0 0 3px rgba(255,233,201,.3)}
+.stamp b{font-family:var(--han);font-size:30px;line-height:1;display:block}
+.stamp span{font-size:10px;letter-spacing:.08em;font-weight:700;display:block;margin-top:4px}
+.tag{position:absolute;left:0;top:16%;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 16px;box-shadow:0 18px 36px -18px rgba(61,15,30,.4);font-size:13px;max-width:200px;line-height:1.35}
+.tag b{display:block;font-family:var(--serif);font-size:21px;color:var(--wine)}
+
+/* MARQUEE */
+.marquee{background:var(--wine-d);color:#f4e3c8;overflow:hidden;padding-block:20px;border-block:1px solid rgba(224,180,90,.3)}
+.mq-track{display:flex;gap:46px;width:max-content;animation:mq 40s linear infinite}
+.mq-track span{display:inline-flex;align-items:center;gap:12px;font-size:15px;letter-spacing:.06em;white-space:nowrap}
+.mq-track b{font-family:var(--han);font-size:28px;color:var(--gold-l);font-weight:500}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* WHAT IS BAZI */
+.bazi-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:10px}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:30px 26px 22px;box-shadow:0 30px 60px -36px rgba(61,15,30,.45);position:relative}
+.chart::before{content:"八字";position:absolute;top:-22px;left:26px;background:var(--wine);color:#ffe9c9;font-family:var(--han);font-size:18px;padding:6px 14px;border-radius:10px}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.col{text-align:center}
+.col small{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.tile{perspective:600px;height:78px;margin-bottom:8px}
+.tile i{display:grid;place-items:center;height:100%;font-style:normal;font-family:var(--han);font-size:clamp(28px,4vw,38px);font-weight:700;border-radius:14px;border:1px solid;transform:rotateY(90deg);opacity:0;transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .5s}
+.chart.go .tile i{transform:none;opacity:1}
+.e-wood{color:var(--wood);border-color:rgba(63,138,90,.35);background:rgba(63,138,90,.08)}
+.e-fire{color:var(--fire);border-color:rgba(210,74,50,.35);background:rgba(210,74,50,.07)}
+.e-earth{color:var(--earth);border-color:rgba(176,122,46,.4);background:rgba(176,122,46,.09)}
+.e-metal{color:var(--metal);border-color:rgba(139,131,120,.4);background:rgba(139,131,120,.08)}
+.e-water{color:var(--water);border-color:rgba(47,107,176,.35);background:rgba(47,107,176,.07)}
+.col.day .tile:first-of-type i{box-shadow:0 0 0 3px var(--gold-l)}
+.col p{font-size:12px;color:var(--muted);line-height:1.35;margin-top:4px}
+.chart .cap{font-size:12.5px;color:var(--muted);margin-top:16px;text-align:center}
+.legend{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:12px;font-weight:600}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.points{display:grid;gap:22px;margin-top:28px}
+.point{display:flex;gap:18px}
+.point .k{flex:none;width:52px;height:52px;border-radius:50%;border:1px solid var(--line-g);display:grid;place-items:center;font-family:var(--han);font-size:22px;color:var(--wine);background:var(--card)}
+.point b{display:block;font-size:17px;margin-bottom:3px}
+.point span{color:var(--muted);font-size:15px}
+
+/* STEMS (flip cards) */
+.stems-sec{background:var(--paper2)}
+.stems{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:46px}
+.stem{perspective:900px;height:200px;cursor:pointer;background:none;border:0;padding:0;font:inherit;color:inherit;text-align:center}
+.stem .in{position:relative;width:100%;height:100%;transition:transform .7s cubic-bezier(.2,.8,.2,1);transform-style:preserve-3d}
+.stem.flip .in{transform:rotateY(180deg)}
+.stem .f,.stem .b{position:absolute;inset:0;border-radius:20px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px;border:1px solid var(--line)}
+.stem .f{background:var(--card)}
+.stem .f b{font-family:var(--han);font-size:60px;line-height:1;font-weight:700}
+.stem .f span{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-top:10px;color:var(--muted)}
+.stem .f em{font-style:normal;position:absolute;bottom:10px;font-size:11px;color:var(--gold)}
+.stem .b{transform:rotateY(180deg);background:var(--wine-d);color:#f6e6cc;border-color:rgba(224,180,90,.3)}
+.stem .b h4{font-family:var(--serif);font-size:24px;color:var(--gold-ll);margin-bottom:6px;font-weight:600}
+.stem .b p{font-size:13px;line-height:1.45;color:#e8d3b8}
+
+/* CALC (dark) */
+.calc{background:radial-gradient(130% 100% at 100% 0%,#5a1426 0%,var(--wine-d) 45%,var(--wine-dd) 100%);color:#f6e6cc;overflow:hidden}
+.calc::before{content:"命";position:absolute;left:-4%;bottom:-18%;font-family:var(--han);font-size:min(60vw,520px);color:rgba(224,180,90,.06);line-height:1;pointer-events:none}
+.calc .eyebrow{color:var(--gold-l)}
+.calc h2 em{color:var(--gold-ll)}
+.calc .lead{color:#d9c2a8}
+.calc-box{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;position:relative}
+.calc-form{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
+.calc-form input{flex:1 1 160px;min-width:0;background:rgba(255,240,220,.08);border:1px solid rgba(224,180,90,.4);border-radius:999px;padding:17px 24px;color:#fff4e6;font:600 19px var(--sans);outline:none}
+.calc-form input:focus{border-color:var(--gold-l)}
+.calc-form input::placeholder{color:#b99c86;font-weight:500}
+.calc .note{font-size:12.5px;color:#c9ad94;margin-top:12px}
+.result{border-radius:28px;border:1px solid rgba(224,180,90,.35);background:rgba(20,4,10,.35);padding:32px;min-height:320px;display:flex;flex-direction:column;justify-content:center}
+.result .ph0{text-align:center;color:#c9ad94}
+.result .ph0 b{font-family:var(--han);font-size:80px;color:rgba(224,180,90,.3);display:block;line-height:1.1}
+.res-top{display:flex;gap:18px;align-items:center;margin-bottom:16px}
+.res-hz{font-family:var(--han);font-size:66px;line-height:1;border-radius:18px;padding:12px 16px;border:1px solid;background:rgba(255,250,242,.95)!important;font-weight:700}
+.res-top h3{font-size:34px;color:#fff4e6}
+.res-top small{color:#c9ad94;font-size:13px;display:block;margin-top:4px}
+.result p{font-size:15.5px}
+.teaser{margin-top:18px;padding-top:16px;border-top:1px dashed rgba(224,180,90,.35);font-size:14.5px;color:#d9c2a8}
+.teaser b{color:var(--gold-ll)}
+.result .btn{margin-top:20px;align-self:flex-start}
+.fade-in{animation:fi .6s ease both}
+@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* EXPERT */
+.expert{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.ex-img{position:relative}
+.ex-img .fr{border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 70px -36px rgba(61,15,30,.55)}
+.ex-img img{width:100%;height:100%;object-fit:cover;object-position:62% 55%}
+.ex-img .sig{position:absolute;left:-14px;bottom:28px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 20px;box-shadow:0 18px 36px -18px rgba(61,15,30,.4)}
+.ex-img .sig b{font-family:var(--serif);font-style:italic;font-size:28px;color:var(--wine);display:block;line-height:1}
+.ex-img .sig span{font-size:12px;color:var(--muted)}
+.ex-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0}
+.ex-stats div{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 14px;text-align:center}
+.ex-stats b{font-family:var(--serif);font-size:40px;color:var(--wine);line-height:1;display:block;font-weight:700}
+.ex-stats span{font-size:12.5px;color:var(--muted);line-height:1.3;display:block;margin-top:6px}
+.creds{list-style:none;display:grid;gap:12px}
+.creds li{display:flex;gap:14px;align-items:flex-start;font-size:15.5px}
+.creds li::before{content:"✦";color:var(--gold);flex:none}
+blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(24px,3vw,31px);line-height:1.3;color:var(--wine);border-left:2px solid var(--gold);padding-left:22px;margin-top:30px}
+
+/* BENEFITS */
+.bens{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.ben{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px;transition:transform .3s,box-shadow .3s;min-width:0;position:relative;overflow:hidden}
+.ben:hover{transform:translateY(-5px);box-shadow:0 30px 50px -30px rgba(61,15,30,.45)}
+.ben .g{position:absolute;right:-6px;top:-18px;font-family:var(--han);font-size:110px;color:rgba(122,31,53,.06);line-height:1}
+.ben .n{font-family:var(--serif);font-size:15px;color:var(--gold);font-weight:700;letter-spacing:.1em}
+.ben h3{font-size:27px;margin:10px 0 8px}
+.ben p{color:var(--muted);font-size:15px}
+
+/* INCLUDED + STEPS */
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:48px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:34px;min-width:0}
+.box h3{font-size:30px;margin-bottom:18px}
+.checks{list-style:none;display:grid;gap:14px}
+.checks li{display:flex;gap:14px;align-items:flex-start}
+.checks li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--wine) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffe9c9' stroke-width='3'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/13px no-repeat;margin-top:2px}
+.checks li span{color:var(--muted);display:block;font-size:14px}
+.tl{display:grid;gap:0;position:relative}
+.tl .s{display:flex;gap:18px;padding-bottom:24px;position:relative}
+.tl .s:not(:last-child)::before{content:"";position:absolute;left:21px;top:46px;bottom:4px;width:1px;background:var(--line-g)}
+.tl .s .d{flex:none;width:44px;height:44px;border-radius:50%;background:var(--paper2);border:1px solid var(--line-g);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:20px;color:var(--wine)}
+.tl .s b{display:block;font-size:17px;margin:8px 0 2px}
+.tl .s span{color:var(--muted);font-size:14.5px}
+
+/* REVIEWS */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.reviews{align-items:start}
+.rv{margin:0;border-radius:26px;background:var(--card);border:1px solid var(--line);padding:12px;box-shadow:0 26px 50px -34px rgba(61,15,30,.5);min-width:0}
+.rv img{width:100%;border-radius:18px;display:block}
+.rv figcaption{font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.3;color:var(--wine);padding:14px 8px 6px;text-align:center}
+
+/* PRICE */
+.price-sec{background:var(--paper2)}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:48px auto 0;max-width:880px}
+.price{border-radius:30px;padding:38px 34px;border:1px solid var(--line);background:var(--card);display:flex;flex-direction:column;min-width:0;position:relative}
+.price.best{background:linear-gradient(165deg,#5a1426,var(--wine-d) 70%);color:#f6e6cc;border-color:rgba(224,180,90,.5)}
+.price.best::before{content:"Тиімді";position:absolute;top:-13px;left:34px;background:var(--gold-l);color:var(--wine-dd);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:999px}
+.price h3{font-size:30px}
+.price .sum{font-family:var(--serif);font-size:62px;color:var(--wine);font-weight:700;line-height:1;margin:16px 0 4px}
+.price.best .sum{color:var(--gold-ll)}
+.price .sum small{font-size:28px}
+.price .per{color:var(--muted);font-size:14px}
+.price.best .per{color:#d9c2a8}
+.price ul{list-style:none;margin:22px 0 30px;display:grid;gap:10px;font-size:15px}
+.price li::before{content:"✦  ";color:var(--gold)}
+.price .btn{margin-top:auto}
+
+/* FAQ */
+.faq{max-width:800px;margin:42px auto 0;display:grid;gap:12px}
+details{border:1px solid var(--line);border-radius:20px;background:var(--card)}
+summary{list-style:none;cursor:pointer;padding:21px 26px;font-weight:600;font-size:16px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;color:var(--wine);transition:transform .25s;flex:none;font-weight:400}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 26px 22px;color:var(--muted);font-size:15px}
+
+/* FINAL */
+.final{background:var(--wine-d);color:#f6e6cc;text-align:center;overflow:hidden}
+.final::before{content:"福";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--han);font-size:min(85vw,560px);color:rgba(224,180,90,.07);line-height:1;pointer-events:none}
+.final .eyebrow{color:var(--gold-l)}
+.final h2{font-size:clamp(42px,6.6vw,76px)}
+.final h2 em{color:var(--gold-ll)}
+.final .lead{color:#d9c2a8;margin-inline:auto}
+.final .btn{margin-top:32px;font-size:18px;padding:21px 40px}
+
+footer{background:var(--wine-dd);color:#c9ad94;padding-block:34px 120px;font-size:13.5px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.foot a{text-decoration:none;color:#f6e6cc}
+.disc{margin-top:16px;font-size:12px;opacity:.75}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));display:none;transform:translateY(120%);transition:transform .35s}
+.mbar.show{transform:none}
+.mbar .btn{width:100%}
+
+.rv-up{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.rv-up.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv-up{opacity:1;transform:none;transition:none}.ring,.ring2,.mq-track,.btn-wa::after{animation:none}.tile i{transform:none;opacity:1}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  section{padding-block:70px}
+  .hero{padding-top:14px}
+  .hero-grid,.bazi-grid,.calc-box,.expert,.inc{grid-template-columns:1fr;gap:40px}
+  .orbit{order:-1;width:min(100%,400px)}
+  .tag{left:-2%;top:10%;padding:9px 12px;max-width:150px;font-size:11.5px}
+  .tag b{font-size:17px}
+  .stamp{width:78px;height:78px;right:2%}
+  .stamp b{font-size:24px}
+  .stems{grid-template-columns:repeat(2,1fr)}
+  .stem{height:180px}
+  .bens{grid-template-columns:1fr}
+  .prices{grid-template-columns:1fr}
+  .reviews{grid-template-columns:1fr}
+  .mbar{display:block}
+  .nav .btn{display:none}
+  .trust{gap:20px}
+  .trust div b{font-size:32px}
+}
+@media (max-width:420px){
+  .hero h1{font-size:48px}
+  .box,.ben,.price{padding:26px}
+  .ex-stats b{font-size:32px}
+  .res-hz{font-size:52px}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="seal">命</span><span><b>Фаризат</b><small>Бацзы · Ци Мэнь</small></span></a>
+    <a class="btn btn-wa" data-wa href="#">Жазылу</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="rv-up">
+      <div class="eyebrow">Бацзы · Ци Мэнь маманы</div>
+      <h1>Сегіз иероглиф — <em>сіздің тағдыр кодыңыз</em></h1>
+      <p class="lead">Туған жылыңыз, айыңыз, күніңіз және сағатыңыз бойынша жеке картаңызды ашамын. Ақша, отбасы, жұмыс және 2027 жыл — қазақ тілінде, түсінікті, нақты.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" data-wa href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3Z"/></svg>Консультацияға жазылу</a>
+        <a class="btn btn-line" href="#calc">Элементімді білу ↓</a>
+      </div>
+      <div class="trust">
+        <div><b><span class="fill" data-fill="years">5+</span></b><span>жыл тәжірибе</span></div>
+        <div><b><span class="fill" data-fill="clients">300+</span></b><span>адам консультация алды</span></div>
+        <div><b>2</b><span>жүйе: Бацзы + Ци Мэнь</span></div>
+      </div>
+    </div>
+    <div class="orbit rv-up" aria-hidden="false">
+      <svg class="ring" viewBox="0 0 500 500" aria-hidden="true"><defs><path id="c1" d="M250,250 m-232,0 a232,232 0 1,1 464,0 a232,232 0 1,1 -464,0"/></defs>
+        <circle cx="250" cy="250" r="244" fill="none" stroke="#b98a30" stroke-opacity=".35"/>
+        <text><textPath href="#c1" textLength="1440" lengthAdjust="spacing">甲 · 乙 · 丙 · 丁 · 戊 · 己 · 庚 · 辛 · 壬 · 癸 · 甲 · 乙 · 丙 · 丁 · 戊 · 己 · 庚 · 辛 · 壬 · 癸 ·</textPath></text></svg>
+      <svg class="ring2" viewBox="0 0 500 500" aria-hidden="true"><defs><path id="c2" d="M250,250 m-226,0 a226,226 0 1,1 452,0 a226,226 0 1,1 -452,0"/></defs>
+        <text><textPath href="#c2" textLength="1400" lengthAdjust="spacing">子 丑 寅 卯 辰 巳 午 未 申 酉 戌 亥 · 子 丑 寅 卯 辰 巳 午 未 申 酉 戌 亥 ·</textPath></text></svg>
+      <div class="ph"><img src="img/hero.jpg" alt="Фаризат — Бацзы маманы" fetchpriority="high"></div>
+      <div class="tag"><b>2027 жыл</b>Сізді не күтеді? Картаңызда жазулы</div>
+      <div class="stamp"><div><b>丁未</b><span>ҚОЙ ЖЫЛЫ</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track" id="mq">
+    <span><b>甲</b>Биік ағаш</span><span><b>乙</b>Гүл мен шөп</span><span><b>丙</b>Күн</span><span><b>丁</b>Шырақ</span><span><b>戊</b>Тау</span><span><b>己</b>Құнарлы жер</span><span><b>庚</b>Қылыш</span><span><b>辛</b>Асыл тас</span><span><b>壬</b>Мұхит</span><span><b>癸</b>Жаңбыр</span>
+  </div>
+</div>
+
+<!-- WHAT IS BAZI -->
+<section id="bazi">
+  <div class="wrap bazi-grid">
+    <div class="rv-up">
+      <div class="eyebrow">Бацзы деген не?</div>
+      <h2>Туған сәтіңіз — <em>төрт тірек, сегіз иероглиф</em></h2>
+      <p class="lead">Бацзы (八字) қытай тілінен «сегіз иероглиф» деп аударылады. Бұл — мың жылдан астам тарихы бар ежелгі жүйе. Туған жыл, ай, күн және сағат төрт тірекке айналады, әр тіректе екі иероглиф бар.</p>
+      <div class="points">
+        <div class="point"><div class="k">天</div><div><b>Жоғарғы иероглиф — Аспан діңгегі</b><span>10 түрі бар. Сіздің ішкі табиғатыңызды, ойыңызды көрсетеді.</span></div></div>
+        <div class="point"><div class="k">地</div><div><b>Төменгі иероглиф — Жер бұтағы</b><span>12 түрі бар (12 жануар). Өміріңіздің негізін, ортаңызды көрсетеді.</span></div></div>
+        <div class="point"><div class="k">五</div><div><b>Бес элемент</b><span>Ағаш, От, Жер, Металл, Су. Олардың тепе-теңдігі — күшіңіз бен әлсіз жеріңіз.</span></div></div>
+      </div>
+    </div>
+    <div class="chart rv-up" id="chart">
+      <div class="cols">
+        <div class="col"><small>Сағат</small><div class="tile"><i class="e-fire">丙</i></div><div class="tile"><i class="e-wood">寅</i></div><p>Балалар, болашақ</p></div>
+        <div class="col day"><small>Күн</small><div class="tile"><i class="e-wood">甲</i></div><div class="tile"><i class="e-water">子</i></div><p>Сіз және жұбайыңыз</p></div>
+        <div class="col"><small>Ай</small><div class="tile"><i class="e-earth">戊</i></div><div class="tile"><i class="e-wood">寅</i></div><p>Ата-ана, мансап</p></div>
+        <div class="col"><small>Жыл</small><div class="tile"><i class="e-metal">庚</i></div><div class="tile"><i class="e-earth">辰</i></div><p>Ата-тек, балалық шақ</p></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--wood)"></i>Ағаш</span><span><i style="background:var(--fire)"></i>От</span><span><i style="background:var(--earth)"></i>Жер</span><span><i style="background:var(--metal)"></i>Металл</span><span><i style="background:var(--water)"></i>Су</span></div>
+      <p class="cap">Үлгі карта. Алтын жиекті иероглиф — <b>Күн иесі</b>, яғни сіздің өзіңіз.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STEMS -->
+<section class="stems-sec" id="stems">
+  <div class="wrap">
+    <div class="center rv-up">
+      <div class="eyebrow">10 Күн иесі</div>
+      <h2>Сіз қай <em>иероглифсіз?</em></h2>
+      <p class="lead">Әр адамның басты иероглифі — Күн иесі. Ол 10 түрлі болады. Карточканы басып, әрқайсысының табиғатын оқыңыз.</p>
+    </div>
+    <div class="stems" id="stemGrid"></div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="calc" id="calc">
+  <div class="wrap calc-box">
+    <div class="rv-up">
+      <div class="eyebrow">Қазір тексеріп көріңіз</div>
+      <h2>Туған жылыңыздың <em>иероглифі қандай?</em></h2>
+      <p class="lead">Туған жылыңызды жазыңыз — картаңыздағы сегіз иероглифтің біреуін дәл қазір ашамыз.</p>
+      <form class="calc-form" id="calcForm" autocomplete="off">
+        <input id="yearIn" type="number" inputmode="numeric" min="1930" max="2026" placeholder="Мысалы, 1992" aria-label="Туған жылыңыз">
+        <button class="btn btn-gold" type="submit">Ашу ✦</button>
+      </form>
+      <p class="note">Қытай метафизикасы бойынша Жаңа жыл 4 ақпаннан басталады. 1 қаңтар мен 4 ақпан аралығында туылсаңыз, алдыңғы жылды жазыңыз.</p>
+    </div>
+    <div class="result rv-up" id="result" aria-live="polite">
+      <div class="ph0"><b>?</b>Жылыңызды жазып, «Ашу» батырмасын басыңыз</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERT -->
+<section id="about">
+  <div class="wrap expert">
+    <div class="ex-img rv-up">
+      <div class="fr"><img src="img/about.jpg" alt="Фаризат Аблажанова" loading="lazy"></div>
+      <div class="sig"><b>Фаризат Аблажанова</b><span>Бацзы және Ци Мэнь маманы</span></div>
+    </div>
+    <div class="rv-up">
+      <div class="eyebrow">Маман туралы</div>
+      <h2>Сәлеметсіз бе, <em>мен Фаризатпын</em></h2>
+      <p class="lead">Бацзы мен Ци Мэньді кәсіби ұстаздардан оқып-үйрендім және білімімді үнемі жетілдіремін. Күрделі ежелгі білімді қарапайым қазақ тілінде, өз өміріңіздің мысалымен түсіндіремін.</p>
+      <div class="ex-stats">
+        <div><b><span class="fill" data-fill="years">5+</span></b><span>жыл тәжірибе</span></div>
+        <div><b><span class="fill" data-fill="clients">300+</span></b><span>консультация</span></div>
+        <div><b><span class="fill" data-fill="students">50+</span></b><span>шәкірт</span></div>
+      </div>
+      <ul class="creds">
+        <li>Бацзы және Ци Мэнь бойынша арнайы оқудан өткен</li>
+        <li>Консультацияны толығымен қазақ тілінде береді</li>
+        <li>Әр консультация — жеке, дайын шаблон мәтін жоқ</li>
+        <li>Деректеріңіз бен сұрағыңыз тек менде қалады</li>
+      </ul>
+      <blockquote>«Мақсатым — қорқыту емес, өзіңізді түсінуге көмектесу.»</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefit" style="padding-top:20px">
+  <div class="wrap">
+    <div class="center rv-up">
+      <div class="eyebrow">Консультацияның пайдасы</div>
+      <h2>Консультациядан кейін <em>сіз…</em></h2>
+    </div>
+    <div class="bens">
+      <div class="ben rv-up"><div class="g">才</div><div class="n">01</div><h3>Өз күшіңізді білесіз</h3><p>Табиғатыңызға сай іс пен бағыт. Неге бір жұмыс оңай, ал біреуі шаршатады — түсінесіз.</p></div>
+      <div class="ben rv-up"><div class="g">財</div><div class="n">02</div><h3>Ақша жолын көресіз</h3><p>Табыс сізге қай салада, қандай жолмен келеді және қай кезеңде сақтану керек.</p></div>
+      <div class="ben rv-up"><div class="g">未</div><div class="n">03</div><h3>2027 жылға дайын боласыз</h3><p>Қой жылы сізге не әкеледі: қолайлы айлар, мүмкіндіктер және неден абай болу керек.</p></div>
+      <div class="ben rv-up"><div class="g">家</div><div class="n">04</div><h3>Отбасыңызды түсінесіз</h3><p>Жұбайыңызбен, балаңызбен неге түсініспейсіз — және қалай жақындасуға болады.</p></div>
+      <div class="ben rv-up"><div class="g">運</div><div class="n">05</div><h3>Өмір кезеңіңізді білесіз</h3><p>Қазір 10 жылдық кезеңіңіздің қай тұсындасыз: бастау уақыты ма, әлде жинау уақыты ма.</p></div>
+      <div class="ben rv-up"><div class="g">道</div><div class="n">06</div><h3>Шешім қабылдау жеңілдейді</h3><p>Көшу, бизнес, неке — не істеу керегін және қашан бастау керегін білесіз.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDED + HOW -->
+<section style="padding-top:20px" id="how">
+  <div class="wrap">
+    <div class="inc">
+      <div class="box rv-up">
+        <div class="eyebrow">Ішінде не бар</div>
+        <h3 style="margin-top:14px">Толық консультация</h3>
+        <ul class="checks">
+          <li><div>Бацзы картаңызды толық ашу<span>4 тірек, 5 элемент, Күн иесі</span></div></li>
+          <li><div>Ци Мэнь бойынша сұрағыңызға жауап<span>Жұмыс, қарым-қатынас, шешім</span></div></li>
+          <li><div>2027 жылғы болжамыңыз<span>Қой жылы картаңызға қалай әсер етеді</span></div></li>
+          <li><div>Ақша мен отбасы бойынша нақты қадамдар<span>Жалпы сөз емес — не істеу керек</span></div></li>
+          <li><div>Жеке PDF және жазба<span>Кейін қайта оқып, тыңдау үшін</span></div></li>
+        </ul>
+      </div>
+      <div class="box rv-up">
+        <div class="eyebrow">Қалай өтеді</div>
+        <h3 style="margin-top:14px">Үш қадам</h3>
+        <div class="tl">
+          <div class="s"><div class="d">1</div><div><b>WhatsApp-қа жазасыз</b><span>Туған күніңіз, уақыты (білсеңіз) және қаласы. Сізді не толғандыратынын айтасыз.</span></div></div>
+          <div class="s"><div class="d">2</div><div><b>Уақытты келісеміз</b><span>Ыңғайлы күнді таңдайсыз, мен картаңызды алдын ала дайындаймын.</span></div></div>
+          <div class="s"><div class="d">3</div><div><b>Картаңызды ашамыз</b><span>Онлайн, шамамен 60 минут. Бәрін түсіндіремін, сұрақтарыңызға жауап беремін.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" style="padding-top:20px">
+  <div class="wrap">
+    <div class="center rv-up">
+      <div class="eyebrow">Пікірлер</div>
+      <h2>Клиенттер <em>не дейді?</em></h2>
+      <p class="lead">Консультация алған адамдардың нақты пікірлері.</p>
+    </div>
+    <div class="reviews">
+      <figure class="rv rv-up"><img src="img/review-2.jpg" alt="Клиенттің пікірі" loading="lazy"><figcaption>«Бұрын онша сенбейтін едім… біраз дүниелер өзгерді»</figcaption></figure>
+      <figure class="rv rv-up"><img src="img/review-1.jpg" alt="Клиенттің пікірі" loading="lazy"><figcaption>«Бәрі прям точно айттыңыз 100%»</figcaption></figure>
+      <figure class="rv rv-up"><img src="img/review-3.jpg" alt="Клиенттің пікірі" loading="lazy"><figcaption>«Өзіме керек бағыт-бағдар алдым»</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="price-sec" id="price">
+  <div class="wrap">
+    <div class="center rv-up">
+      <div class="eyebrow">Бағасы</div>
+      <h2>Өзіңізге <em>инвестиция</em></h2>
+      <p class="lead">Бір консультация — бірнеше жылға бағыт.</p>
+    </div>
+    <div class="prices">
+      <div class="price rv-up">
+        <h3>Жеке консультация</h3>
+        <div class="sum">30 000 <small>₸</small></div>
+        <div class="per">1 адам · онлайн</div>
+        <ul><li>Бацзы картаңыз толық</li><li>Ци Мэнь бойынша сұрағыңыз</li><li>2027 жыл</li><li>Жеке PDF</li></ul>
+        <a class="btn btn-wa" data-wa href="#">Жазылу</a>
+      </div>
+      <div class="price best rv-up">
+        <h3>Екі адамға</h3>
+        <div class="sum">50 000 <small>₸</small></div>
+        <div class="per">жұбайыңыз, балаңыз немесе ата-анаңызбен</div>
+        <ul><li>Екі картаны толық ашу</li><li>Үйлесім мен қарым-қатынас</li><li>Екеуіңіздің 2027 жылыңыз</li><li>Әрқайсысына PDF</li></ul>
+        <a class="btn btn-gold" data-wa data-wa-text="pair" href="#">Екеуміз жазыламыз</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center rv-up">
+      <div class="eyebrow">Сұрақ-жауап</div>
+      <h2>Жиі қойылатын <em>сұрақтар</em></h2>
+    </div>
+    <div class="faq rv-up">
+      <details><summary>Туған уақытымды білмесем ше?</summary><p>Ештеңе етпейді. Карта жыл, ай және күн бойынша да ашылады. Уақыт белгілі болса, карта толығырақ болады.</p></details>
+      <details><summary>Басқа қаладамын (шетелдемін). Болады ма?</summary><p>Иә. Консультация онлайн, WhatsApp арқылы өтеді — қай қалада, қай елде болсаңыз да.</p></details>
+      <details><summary>Бацзы — бал ашу ма?</summary><p>Жоқ. Бацзы — туған уақыт бойынша мінезді, күшті жақтарды және өмір кезеңдерін талдайтын ежелгі жүйе. Бұл — өзіңізді түсінуге және дұрыс шешім қабылдауға арналған құрал.</p></details>
+      <details><summary>Екі адамдық консультация қалай өтеді?</summary><p>Екі адамның картасын бөлек ашып, бір-бірімен салыстырамын: үйлесім, қарым-қатынас, ортақ жоспарлар.</p></details>
+      <details><summary>Не дайындау керек?</summary><p>Туған күніңіз, уақыты (білсеңіз), туған қалаңыз және сізді толғандыратын 3 басты сұрақ. Сұрақтарды алдын ала жазсаңыз, картаңызды соларға сай дайындаймын.</p></details>
+      <details><summary>Деректерім құпия ма?</summary><p>Иә. Туған күніңіз де, сұрағыңыз да тек менде қалады. Ешкімге берілмейді.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap rv-up">
+    <div class="eyebrow">Бір хабарлама жеткілікті</div>
+    <h2>Картаңыз <em>сізді күтіп тұр</em></h2>
+    <p class="lead">Жазыңыз — қалғанын өзім түсіндіремін 🌿</p>
+    <a class="btn btn-gold" data-wa href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3Z"/></svg>WhatsApp-қа жазу</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><b style="color:#f6e6cc;font-family:var(--serif);font-size:21px">Фаризат</b> · Бацзы · Ци Мэнь</div>
+      <div style="display:flex;gap:22px;flex-wrap:wrap">
+        <a href="https://www.instagram.com/farizat_tooizhan/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@farizat.toooizhan" target="_blank" rel="noopener">TikTok</a>
+        <a data-wa href="#">WhatsApp</a>
+      </div>
+    </div>
+    <p class="disc">Бацзы — өзін-өзі тануға арналған құрал. Нәтиже мен табысқа кепілдік емес.</p>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a class="btn btn-wa" data-wa href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3Z"/></svg>WhatsApp-қа жазу</a></div>
+
+<script>
+(function(){
+  var WA = "77014741404";
+  var TEXTS = {
+    main: "Сәлеметсіз бе! 2027 жылы маған не күтіп тұр, білгім келеді 🌿",
+    pair: "Сәлеметсіз бе! Екі адамға консультация алғымыз келеді 🌿"
+  };
+  function waLink(t){ return "https://wa.me/" + WA + "?text=" + encodeURIComponent(t); }
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.href = waLink(TEXTS[a.getAttribute("data-wa-text")] || TEXTS.main);
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  // marquee: duplicate for seamless loop
+  var mq = document.getElementById("mq"); mq.innerHTML += mq.innerHTML;
+
+  // 10 stems flip cards
+  var ST = [
+    ["甲","Ян Ағаш","e-wood","Биік ағаш","Тік, табанды, көшбасшы. Алға қарай өсуді, жаңа іс бастауды жақсы көреді."],
+    ["乙","Инь Ағаш","e-wood","Гүл мен шөп","Икемді, нәзік, бірақ мықты. Кез келген жерде жол тауып өседі."],
+    ["丙","Ян От","e-fire","Күн","Жарқын, жомарт, ашық. Айналасына жылу мен шабыт береді."],
+    ["丁","Инь От","e-fire","Шырақ","Жылы, ұқыпты, терең. Басқаларға жолды жарықтандырады."],
+    ["戊","Ян Жер","e-earth","Тау","Сенімді, тұрақты, сабырлы. Отбасы мен ұжымның тірегі."],
+    ["己","Инь Жер","e-earth","Құнарлы жер","Қамқор, бағып-күтетін, тәрбиелейтін. Адамдарды өсіреді."],
+    ["庚","Ян Металл","e-metal","Қылыш","Батыл, әділ, шешімді. Сөзінде тұрады, қиындықтан қорықпайды."],
+    ["辛","Инь Металл","e-metal","Асыл тас","Талғампаз, сұлулықты сүйеді. Ішкі құндылығы жоғары."],
+    ["壬","Ян Су","e-water","Мұхит","Кең, еркін, үлкен ойлы. Саяхат пен жаңа идеяларды жақсы көреді."],
+    ["癸","Инь Су","e-water","Жаңбыр","Терең сезімді, интуициясы күшті, дана. Үнсіз, бірақ ықпалды."]
+  ];
+  var g = document.getElementById("stemGrid");
+  ST.forEach(function(s){
+    var b = document.createElement("button");
+    b.className = "stem rv-up"; b.type = "button"; b.setAttribute("aria-label", s[1] + " — " + s[3]);
+    b.innerHTML = '<div class="in"><div class="f"><b class="'+s[2]+'" style="background:none;border:0">'+s[0]+'</b><span>'+s[1]+'</span><em>басыңыз ↻</em></div><div class="b"><h4>'+s[3]+'</h4><p>'+s[4]+'</p></div></div>';
+    b.addEventListener("click", function(){ b.classList.toggle("flip"); });
+    g.appendChild(b);
+  });
+
+  // header + mobile bar
+  var hdr = document.querySelector("header"), bar = document.getElementById("mbar");
+  function onScroll(){
+    var y = window.scrollY;
+    hdr.classList.toggle("scrolled", y > 10);
+    var nearEnd = (window.innerHeight + y) > (document.body.scrollHeight - 320);
+    bar.classList.toggle("show", y > 560 && !nearEnd);
+  }
+  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+  // reveal + chart flip
+  var chart = document.getElementById("chart");
+  var tiles = chart.querySelectorAll(".tile i");
+  tiles.forEach(function(t,i){ t.style.transitionDelay = (i*0.12)+"s"; });
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); if(e.target===chart) setTimeout(function(){chart.classList.add("go")},300); io.unobserve(e.target); } });
+    }, {threshold:.15, rootMargin:"0px 0px -40px 0px"});
+    document.querySelectorAll(".rv-up").forEach(function(el){ io.observe(el); });
+  } else { document.querySelectorAll(".rv-up").forEach(function(el){ el.classList.add("in"); }); chart.classList.add("go"); }
+
+  // calculator
+  var STEMS = [
+    ["庚","Металл","e-metal","Ян"],["辛","Металл","e-metal","Инь"],
+    ["壬","Су","e-water","Ян"],["癸","Су","e-water","Инь"],
+    ["甲","Ағаш","e-wood","Ян"],["乙","Ағаш","e-wood","Инь"],
+    ["丙","От","e-fire","Ян"],["丁","От","e-fire","Инь"],
+    ["戊","Жер","e-earth","Ян"],["己","Жер","e-earth","Инь"]
+  ];
+  var BR = ["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"];
+  var ANIMALS = ["Тышқан","Сиыр","Барыс","Қоян","Ұлу","Жылан","Жылқы","Қой","Мешін","Тауық","Ит","Доңыз"];
+  var ICON = ["🐭","🐮","🐯","🐰","🐲","🐍","🐴","🐑","🐵","🐔","🐶","🐷"];
+  var DESC = {
+    "Ағаш":"Ағаш — өсу мен бастаманың элементі. Мұндай адамдар жаңа іс бастауды, дамуды, басқаларға жол көрсетуді жақсы көреді.",
+    "От":"От — жарық пен шабыттың элементі. Мұндай адамдар айналасын жылытады, көпшілікке жол табады, эмоциясы күшті.",
+    "Жер":"Жер — тірек пен тұрақтылықтың элементі. Мұндай адамдар сенімді, қамқор, отбасы мен үйдің тірегі болады.",
+    "Металл":"Металл — тәртіп пен әділдіктің элементі. Мұндай адамдар нақты, шешімді, сөзінде тұрады.",
+    "Су":"Су — даналық пен интуицияның элементі. Мұндай адамдар терең ойлайды, кез келген жағдайға бейімделеді."
+  };
+  var form = document.getElementById("calcForm"), inp = document.getElementById("yearIn"), out = document.getElementById("result");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var y = parseInt(inp.value, 10);
+    if (!(y >= 1930 && y <= 2026)) { out.innerHTML = '<div class="ph0 fade-in"><b>?</b>1930 бен 2026 аралығындағы жылды жазыңыз</div>'; return; }
+    var s = STEMS[y % 10], a = (y - 4) % 12; if (a < 0) a += 12;
+    var msg = "Сәлеметсіз бе! Мен " + y + " жылы туғанмын (" + s[0] + BR[a] + ", " + s[1] + ", " + ANIMALS[a] + " жылы). Картамды толық ашқым келеді 🌿";
+    out.innerHTML =
+      '<div class="fade-in">' +
+        '<div class="res-top"><div class="res-hz ' + s[2] + '">' + s[0] + BR[a] + '</div>' +
+        '<div><h3>' + s[1] + ' · ' + ICON[a] + ' ' + ANIMALS[a] + '</h3><small>' + y + ' жыл · ' + s[3] + ' ' + s[1].toLowerCase() + '</small></div></div>' +
+        '<p>' + DESC[s[1]] + '</p>' +
+        '<div class="teaser">Бұл — сегіз иероглифтің <b>тек екеуі</b>. Ең бастысы — <b>Күн иесі</b> — туған күніңізде жасырын. Оны және 2027 жылыңызды консультацияда ашамын.</div>' +
+        '<a class="btn btn-gold" target="_blank" rel="noopener" href="' + waLink(msg) + '">Картамды толық ашу →</a>' +
+      '</div>';
+  });
+})();
+</script>
+</body>
+</html>
